@@ -30,6 +30,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
         _direction = new Vector3(_controlerPlayer.ReturnHorizontal(), 0.0f, _controlerPlayer.ReturnVertical()) * _currentSpeed;
+        
+        if(_controlerPlayer.ReturnHorizontal() != 0.0f && _controlerPlayer.ReturnVertical() != 0.0f)
+        {
+            _direction /= 1.4f;
+        }
+
 
         transform.position += (transform.forward * _direction.z) * Time.deltaTime;
         transform.position += (transform.right * _direction.x) * Time.deltaTime;
