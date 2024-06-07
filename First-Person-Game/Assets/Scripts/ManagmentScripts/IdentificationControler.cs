@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections.Generic;
 
 public class IdentificationControler : MonoBehaviour
 {
@@ -11,7 +10,7 @@ public class IdentificationControler : MonoBehaviour
         ChekAllGameObjects();
     }
 
-    public void ChekAllGameObjects()
+    private void ChekAllGameObjects()
     {
         GameObject[] AllGameObjectsOnScene = UnityEngine.Object.FindObjectsOfType<GameObject>();
 
