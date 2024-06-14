@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         
         if(_controlerPlayer.ReturnHorizontal() != 0.0f && _controlerPlayer.ReturnVertical() != 0.0f)
         {
-            _direction /= 1.4f;
+            _direction /= 1.4f; 
         }
 
 
