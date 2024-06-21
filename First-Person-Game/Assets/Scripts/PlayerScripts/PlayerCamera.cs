@@ -18,9 +18,9 @@ public class PlayerCamera : MonoBehaviour, ICheckToRepairParameters
 
     public void Realization()
     {
-        _playerControler.transform.eulerAngles += new Vector3(0.0f, ReturnProduct(_playerControler.ReturnMouseX()), 0.0f);
+        _playerControler.transform.eulerAngles += new Vector3(0.0f, ReturnProduct(_playerControler.GetMouseX()), 0.0f);
 
-        transform.localEulerAngles += new Vector3(-ReturnProduct(_playerControler.ReturnMouseY()), 0.0f, 0.0f);
+        transform.localEulerAngles += new Vector3(-ReturnProduct(_playerControler.GetMouseY()), 0.0f, 0.0f);
 
         CheckToRepairParameters();
     }

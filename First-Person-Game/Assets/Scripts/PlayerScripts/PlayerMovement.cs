@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     
     public void Realization()
     {
-        switch (_controlerPlayer.ReturnSpeedLegsAre())
+        switch (_controlerPlayer.GetSpeedLegsAre())
         {
             case SpeedLegsAre.Staying:
                 _currentSpeed = 0.0f;
@@ -29,9 +29,9 @@ public class PlayerMovement : MonoBehaviour
                 break;
         }
 
-        _direction = new Vector3(_controlerPlayer.ReturnHorizontal(), 0.0f, _controlerPlayer.ReturnVertical()) * _currentSpeed;
+        _direction = new Vector3(_controlerPlayer.GetHorizontal(), 0.0f, _controlerPlayer.GetVertical()) * _currentSpeed;
         
-        if(_controlerPlayer.ReturnHorizontal() != 0.0f && _controlerPlayer.ReturnVertical() != 0.0f)
+        if(_controlerPlayer.GetHorizontal() != 0.0f && _controlerPlayer.GetVertical() != 0.0f)
         {
             _direction /= 1.4f; 
         }

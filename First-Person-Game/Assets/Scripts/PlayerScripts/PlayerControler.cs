@@ -79,36 +79,36 @@ public class PlayerControler : MonoBehaviour
     }
 
     
-    // Return of parameters
+    // Get of parameters
 
-    public SpeedLegsAre ReturnSpeedLegsAre()
+    public SpeedLegsAre GetSpeedLegsAre()
     {
         return _legsSpeedAre;
     }
 
-    public LegsAre ReturnLegsAre()
+    public LegsAre GetLegsAre()
     {
         return _legsAre;
     }
 
 
-    // Return of axis
-    public float ReturnHorizontal() 
+    // Get of axis
+    public float GetHorizontal() 
     {
         return _speedHorizontal;
     }
 
-    public float ReturnVertical()
+    public float GetVertical()
     {
         return _speedVertical;
     }
 
-    public float ReturnMouseX()
+    public float GetMouseX()
     {
         return _mouseX;
     }
 
-    public float ReturnMouseY()
+    public float GetMouseY()
     {
         return _mouseY;
     }
